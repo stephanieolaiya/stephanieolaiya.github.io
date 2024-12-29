@@ -1,0 +1,59 @@
+/* body {
+    font-family: 'Raleway';
+    font-size: 22px;
+    background-color: #FFF5EF;
+} */
+
+body,
+html {
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #FFF5EF;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FFF5EF;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #1F130D;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Change the link color to white on hover */
+li a:hover {
+    background-color: #FFFFFF;
+}
+
+
+/* Image styling */
+#photo img {
+    max-width: 80vw;
+    max-height: 60vh;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+
+.body-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 100%;
+}
