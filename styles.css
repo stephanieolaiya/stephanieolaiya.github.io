@@ -57,3 +57,22 @@ li a:hover {
     justify-content: space-around;
     height: 100%;
 }
+
+/* Style all font awesome icons */
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    background: #b3aca7;
+    color: white;
+    border-radius: 30%;
+    margin-right: 5px;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
