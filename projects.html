@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div style="height: 100vh;">
+    <div style="height: 100vh; margin-bottom: 10px;">
         <div style="display: flex; justify-content: end; padding: 3px;">
             <ul>
                 <li><a href="/index.html">About</a></li>
@@ -22,75 +22,126 @@
         <div style="height: 90%">
             <h2 style="text-align: center;"> PROJECTS </h2>
             <div style="border-top: thin solid; border-color: #b3aca7;"></div>
-            <div style="margin-left: 10px;">
-                <div style="display: inline-flex; align-items: center;">
-                    <h3 style="margin-right: 5px;">AccUI: Accessible UI Generator (2024)</h3>
-                    <a href="https://github.com/smlegitime/accessible-ui-helper" class="fa fa-github" target="_blank"></a>
-                    <a href="https://accui.cs.brown.edu/" class="fa fa-link" target="_blank"></a>
-                </div>
 
-                <p>
-                    A React web application allows for developers to check their
-                    website's accessibility as they develop, and generates
-                    automated fixes for accessibility violation (based on W3C Accessibility Standards).
-                    Unlike many other accessibility evaluation tools,
-                    the site is able to the analyze dynamic webpages with multiple pages.
-                </p>
-                <!-- Slideshow container -->
-                <div class="slideshow-container">
+            <div class="cards">
+                <article class="card">
+                    <header>
+                        <div style="display: inline-flex; align-items: center;">
+                            <h3>AccUI: Accessible UI Generator (2024)</h3>
+                            <a href="https://github.com/smlegitime/accessible-ui-helper" class="fa fa-github"
+                                target="_blank"></a>
+                            <a href="https://accui.cs.brown.edu/" class="fa fa-link" target="_blank"></a>
+                        </div>
+                    </header>
 
-                    <!-- Full-width images with number and caption text -->
-                    <div class="mySlides fade" id="mySlides1">
-                        <div class="numbertext">1 / 3</div>
-                        <img src="/assets/accui-img1.png" style="width:100%">
+
+                    <!-- Slideshow container -->
+                    <div class="slideshow-container">
+
+                        <!-- Full-width images with number and caption text -->
+                        <div class="mySlides fade" id="mySlides1">
+                            <div class="numbertext">1 / 3</div>
+                            <img src="/assets/accui-img1.png" style="width:100%">
+                        </div>
+
+                        <div class="mySlides fade" id="mySlides2">
+                            <div class="numbertext">2 / 3</div>
+                            <img src="/assets/accui-img2.png" style="width:100%">
+                        </div>
+
+                        <div class="mySlides fade" id="mySlides3">
+                            <div class="numbertext">2 / 3</div>
+                            <img src="/assets/accui-img3.png" style="width:100%">
+                        </div>
+
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
                     </div>
 
-                    <div class="mySlides fade" id="mySlides2">
-                        <div class="numbertext">2 / 3</div>
-                        <img src="/assets/accui-img2.png" style="width:100%">
+                    <div class="content">
+                        <p>
+                            A React web application allows for developers to check their
+                            website's accessibility as they develop, and generates
+                            automated fixes for accessibility violation (based on W3C Accessibility Standards).
+                            Unlike many other accessibility evaluation tools,
+                            the site is able to the analyze dynamic webpages with multiple pages.
+                        </p>
+                    </div>
+                </article>
+                <article class="card">
+                    <header>
+                        <div style="display: inline-flex; align-items: center;">
+                            <h3>Bibliographie (2024)</h3>
+                            <a href="https://github.com/stephanieolaiya/Bibliographie" class="fa fa-github"
+                                target="_blank"></a>
+                        </div>
+                    </header>
+                    <div style="display: flex; justify-content: center; ">
+                        <img src="assets/biblio-1.png" style="width: 90%;"></img>
                     </div>
 
-                    <div class="mySlides fade" id="mySlides3">
-                        <div class="numbertext">2 / 3</div>
-                        <img src="/assets/accui-img3.png" style="width:100%">
+                    <div class="content">
+                        <p>
+                            Personal book management web application to
+                            search for books, add them to personalized
+                            libraries, rate out of 5 stars, and save a review/note
+                        </p>
                     </div>
-
-                    <!-- Next and previous buttons -->
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                </div>
-                <br>
-
-                <!-- The dots/circles -->
-                <div style="text-align:center">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                </div>
+                </article>
             </div>
+
+
+
             <div style="border-top: thin solid; border-color: #b3aca7; margin-top: 5px;"></div>
 
+            <!-- <h2 style="text-align: center;"> COLLEGE PROJECTS </h2>
+            <div>
+                <h4>CSCI1730: </h4>
+                <p>
+                    Implemented an interpreter, typechecker hte
+                </p>
+                <h4>CSCI200: </h4>
+                <ol>
+                    <li>
+                        Search Engine: Created Search Engine using Python that uses PageRank and Term Relevancy to score
+                        Wiki Files. Search Engine employed a REPL interface to return most relevant HTML pages to a
+                        given query.
+                    </li>
+                    <li>
+                        Travel Planner: Created a travel planner that implements Breadth-First Search and Dijkstra
+                        Algorithms using
+                        Java that allows a user to plan travel routes that meets either cost, price or time needs.
+                    </li>
+                </ol>
+                <h4>CSCI1951A</h4>
+                <p></p>
+            </div> -->
             <h2 style="text-align: center;"> PUBLICATIONS </h2>
             <ol>
-                <li>
+                <li style="margin-bottom: 5px;">
                     Olaiya, Stephanie O., "Adversarial and Real World Image Robustness of Computer Vision Models With
                     Better Human Visual Strategy Alignment" (2023). Neuroscience Theses and Dissertations. Brown Digital
                     Repository. Brown University Library. https://repository.library.brown.edu/studio/item/bdr:mw5ra9fe/
                 </li>
 
-                <li>Olaiya, S., Marques, T., & DiCarlo, J. J. (2022). Measuring the Alignment of ANNs and Primate V1 on
+                <li style="margin-bottom: 5px;">
+                    Olaiya, S., Marques, T., & DiCarlo, J. J. (2022). Measuring the Alignment of ANNs and Primate V1 on
                     Luminance and Contrast Response Characteristics. SVRHM 2022 Workshop @ NeurIPS. Retrieved from
                     https://openreview.net/forum?id=XTPfeOoZD8</li>
 
-                <li>Linsley, D., Feng, P., Boissin, T., Ashok, A. K., Fel, T., Olaiya, S., & Serre, T. (2023).
+                <li style="margin-bottom: 5px;">
+                    Linsley, D., Feng, P., Boissin, T., Ashok, A. K., Fel, T., Olaiya, S., & Serre, T. (2023).
                     Adversarial alignment: Breaking the trade-off between the strength of an attack and its relevance to
                     human perception. arXiv [Cs.CV]. Retrieved from http://arxiv.org/abs/2306.03229</li>
 
-                <li>Cirincione, A., Verrier, R., Bic, A., Olaiya, S., DiCarlo, J. J., Udeigwe, L., & Marques, T. (2022).
+                <li style="margin-bottom: 5px;">
+                    Cirincione, A., Verrier, R., Bic, A., Olaiya, S., DiCarlo, J. J., Udeigwe, L., & Marques, T. (2022).
                     Implementing Divisive Normalization in CNNs Improves Robustness to Common Image Corruptions. SVRHM
                     2022 Workshop @ NeurIPS. Retrieved from https://openreview.net/forum?id=KAAbo44qhJV</li>
 
-                <li>Petzschner, F., Paliwal, S., Paolini, G., Olaiya, S., Zimmerman, C., Zahnd, N., … Stephan, K. (01
+                <li style="margin-bottom: 5px;">
+                    Petzschner, F., Paliwal, S., Paolini, G., Olaiya, S., Zimmerman, C., Zahnd, N., … Stephan, K. (01
                     2023). Illusion of control differentially affects outcome predictions in pathological and
                     recreational gamblers. doi:10.32470/CCN.2023.1189-0</li>
             </ol>
@@ -98,4 +149,5 @@
     </div>
 </body>
 <script src="/projects.js"></script>
+
 </html>
